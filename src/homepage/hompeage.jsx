@@ -9,7 +9,7 @@ export default class HomePage extends React.Component {
     }
 
     componentDidMount() {
-        axios.get(`hsttps://newsapi.org/v2/top-headlines?country=id&apiKey=d5cc1aabc64f4477afd898614ca734ba`)
+        axios.get(`https://newsapi.org/v2/top-headlines?country=id&apiKey=d5cc1aabc64f4477afd898614ca734ba`)
             .then(res => {
                 const data = res.data;
                 this.setState({ data: data.articles });
